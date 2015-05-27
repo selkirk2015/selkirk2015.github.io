@@ -1,7 +1,46 @@
 <!DOCTYPE html>
 <html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta name="viewport" content="initial-scale=1.0, maximum-scale=2.0">
+	<title>Red River College Compensation Report 2014</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js" type="text/javascript"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.1/jquery-ui.min.js"></script>
+	<link href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.1/themes/blitzer/jquery-ui.css" rel="stylesheet" />
+  <script src="data/RRC Compensation Report 2014.js" type="text/javascript"></script>
+
+	<script src="lib/jquery.dataTables.min.js" type="text/javascript"></script>
+	<script src="lib/dataTables.jqueryui.js" type="text/javascript"></script>
+	<link href="styles/dataTables.jqueryui.css" rel="stylesheet" type="text/css">
+	<link href="styles/demo.css" rel="stylesheet" type="text/css">
+	<link href="styles/custom.css" rel="stylesheet" type="text/css">
+</head>
 <body>
-<h1>Hello World</h1>
-<p>I'm hosted with GitHub Pages.</p>
+<div class="container">
+  <section>
+		<h1>Red River College Compensation Report 2014</h1>
+		<table id="target" class="display" cellspacing="0" width="100%">
+			<thead><tr><th>Name</th><th>Start date</th><th>Position</th><th>Compensation</th></tr></thead>
+			<tfoot><tr><th>Name</th><th>Start date</th><th>Position</th><th>Compensation</th></tr></tfoot>
+		</table>
+		<footer>
+			<strong>ABOUT THIS DATA:</strong> Compensation data and job titles were compiled from a publicly disclosed report for the fiscal year ending June 30, 2014.
+			Red River College releases this report in accordance with the <a href="http://web2.gov.mb.ca/laws/statutes/ccsm/p265e.php" target="_blank">
+			Public Sector Compensation Disclosure Act</a>. Employment start dates were estimated from publicly available employment seniority report
+			from December, 2012.
+			<strong>DISCLAIMER:</strong> Compensation data were digitized from hard copy using <span title="Optical Character Recognition" style="cursor: help;">OCR</span>
+			scanning. No audit has been conducted on this digitized data. THEREFORE, DATA MAY BE INCOMPLETE, INCORRECT, OUT-DATED, FABRICATED, OR ALTOGETHER
+			USELESS. PROCEED AT YOUR OWN RISK. REFER TO THE ORIGINAL DOCUMENTS.
+		</footer>
+  </section>
+</div>
+<script class="init">
+	$(document).ready(function() { $('#target').dataTable({ "jQueryUI": true, "lengthMenu": [ [10, 20, 100, -1], [10, 20, 100, "All"] ], "pagingType": "full_numbers" } ); } );
+  var items = ""; $(data).each(function( i, row ) { $(row).each(function( i2, d ) {
+      items += ( "<tr id='" + i + "'><td>" + d.lname + ", " + d.fname + "</td><td>" + d.start + "</td><td>" + d.posn + "</td><td>" + d.comp + "</td></tr>" );
+	}); });
+  $("<tbody/>", { "id": "report", html: items }).appendTo( "#target" );
+</script>
 </body>
-</html> 
+</html>
+<!-- Thanks: https://jquery.com/ http://jqueryui.com/ https://datatables.net/ -->
