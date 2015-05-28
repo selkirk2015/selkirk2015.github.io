@@ -1,4 +1,3 @@
-
 @import url(http://fonts.googleapis.com/css?family=Raleway:100);
 
 body {
@@ -8,7 +7,6 @@ body {
 	color: #333;
 	background-color: #fff;
 }
-
 
 div.container {
 	max-width: 980px;
@@ -78,7 +76,6 @@ p.copyright {
 	clear: both;
 	height: 0;
 }
-
 
 div.info {
 	margin-bottom: 2em;
@@ -330,4 +327,3 @@ div.column_half {
 		display: block;
 	}
 }
-
