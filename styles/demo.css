@@ -5,7 +5,7 @@
     src: url('font/raleway_thin-webfont.eot');
     src: url('font/raleway_thin-webfont.eot?#iefix') format('embedded-opentype'),
          url('font/raleway_thin-webfont.woff') format('woff'),
-         url('font/raleway_thin-webfont.ttf') format('truetype');
+         url('https://github.com/theleagueof/raleway/blob/master/webfonts/raleway_thin-webfont.ttf?raw=true') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
