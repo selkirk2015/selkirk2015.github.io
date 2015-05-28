@@ -1,12 +1,5 @@
 
-@font-face {
-/* RaleWay Thin from - https://www.theleagueofmoveabletype.com, Font Squirrel for Web Font creation with "Adjust Glyph Spacing" -50 */
-    font-family: 'ralewaythin';
-    src: url('https://fonts.googleapis.com/css?family=Raleway:100') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-}
-
+@import url(http://fonts.googleapis.com/css?family=Raleway:100);
 
 body {
 	font: 90%/1.45em "Helvetica Neue", HelveticaNeue, Verdana, Arial, Helvetica, sans-serif;
@@ -23,7 +16,7 @@ div.container {
 }
 
 h1 {
-	font-family: 'HelveticaNeue-UltraLight', 'Helvetica Neue UltraLight', 'ralewaythin', 'Helvetica Neue', Arial, Helvetica, sans-serif;
+	font-family: 'HelveticaNeue-UltraLight', 'Helvetica Neue UltraLight', 'Raleway', 'Helvetica Neue', Arial, Helvetica, sans-serif;
     font-weight: 100;
     letter-spacing: 1px;
 	font-size: 3em;
