@@ -1,5 +1,5 @@
 # selkirk2015.github.io
-RRC Compensation Report 2014
+Red River College Compensation Report 2014
 
 ABOUT THIS DATA:
 
